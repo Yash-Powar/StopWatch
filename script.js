@@ -16,16 +16,18 @@ function stop() {
 
 function reset() {
     timer = false;
-    hr= 0;
-    min= 0;
-    sec= 0;
-    count= 0;
+    hr = 0;
+    min = 0;
+    sec = 0;
+    count = 0;
+    console.log("weyy", hr, min, sec, count)
+    document.getElementById("hr").innerHTML = "00"
+    document.getElementById("min").innerHTML = "00"
+    document.getElementById("sec").innerHTML = "00"
+    document.getElementById("count").innerHTML = "00"
 }
 
-document.getElementById("hr").innerHTML = "00";
-document.getElementById("min").innerHTML = "00";
-document.getElementById("sec").innerHTML = "00";
-document.getElementById("count").innerHTML = "00";
+
 
 
 function stopwatch() {
@@ -53,16 +55,16 @@ function stopwatch() {
         let secStr = sec;
         let countStr = count;
 
-        if(hr<10) {
+        if (hr < 10) {
             hrStr = "0" + hrStr;
         }
-        if(min<10) {
+        if (min < 10) {
             minStr = "0" + minStr;
         }
-        if(sec<10) {
+        if (sec < 10) {
             secStr = "0" + secStr;
         }
-        if(count<10) {
+        if (count < 10) {
             countStr = "0" + countStr;
         }
 
